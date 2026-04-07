@@ -1,0 +1,12 @@
+{
+  "expectedNavItems": [
+    "Trade",
+    "Markets",
+    "About",
+    "Download",
+    "Login",
+    "Register"
+  ],
+  "minimumNavItemCount": 3,
+  "notes": "Update expectedNavItems to match actual live site nav labels"
+}

@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Unit-Tests-Only" verbose="1">
+    <test name="CharacterFrequency-UnitTests">
+        <classes>
+            <class name="com.multibank.tests.CharacterFrequencyTest"/>
+        </classes>
+    </test>
+</suite>

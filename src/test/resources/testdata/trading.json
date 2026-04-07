@@ -1,0 +1,16 @@
+{
+  "expectedCategories": [
+    "Crypto",
+    "Forex",
+    "Stocks",
+    "Commodities",
+    "Indices"
+  ],
+  "minimumPairCount": 5,
+  "requiredPairs": [
+    "BTC",
+    "ETH",
+    "EUR"
+  ],
+  "notes": "Update requiredPairs and categories to match actual live trading pairs"
+}

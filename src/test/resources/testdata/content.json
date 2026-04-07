@@ -1,0 +1,9 @@
+{
+  "aboutPageUrl": "https://trade.multibank.io/about",
+  "expectedAboutPageText": [
+    "MultiBank",
+    "trading",
+    "regulated"
+  ],
+  "notes": "Update aboutPageUrl and expectedAboutPageText to match the live site"
+}

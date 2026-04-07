@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+  testng.xml
+  ==========
+  Main TestNG suite. Runs all tests on Chrome (default).
+  For cross-browser: mvn test -DsuiteXmlFile=testng-crossbrowser.xml
+  For headless CI:   mvn test -Dheadless=true
+  For parallel:      mvn test -DsuiteXmlFile=testng-parallel.xml
+-->
+<suite name="MultiBank-QA-Suite" verbose="1" thread-count="1">
+
+    <parameter name="browser" value="chrome"/>
+
+    <!-- Task 2: Unit tests (no driver needed) -->
+    <test name="CharacterFrequency-UnitTests">
+        <classes>
+            <class name="com.multibank.tests.CharacterFrequencyTest"/>
+        </classes>
+    </test>
+
+    <!-- Task 1: UI Automation tests -->
+    <test name="Navigation-Tests">
+        <classes>
+            <class name="com.multibank.tests.NavigationTest"/>
+        </classes>
+    </test>
+
+    <test name="Trading-Tests">
+        <classes>
+            <class name="com.multibank.tests.TradingTest"/>
+        </classes>
+    </test>
+
+    <test name="Content-Validation-Tests">
+        <classes>
+            <class name="com.multibank.tests.ContentValidationTest"/>
+        </classes>
+    </test>
+
+</suite>
