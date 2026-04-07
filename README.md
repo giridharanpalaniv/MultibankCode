@@ -90,6 +90,16 @@ mvn test -DsuiteXmlFile=testng-crossbrowser.xml
 mvn test -DsuiteXmlFile=testng-unit.xml
 ```
 
+### 7. Run Task 2 demo (Character Frequency - Fastest)
+```bash
+java -cp target/test-classes com.multibank.utils.CharacterFrequency
+```
+
+### 8. Run Task 2 standalone tests (All 10 tests)
+```bash
+java -cp target/test-classes com.multibank.tests.SimpleCharacterFrequencyTest
+```
+
 ---
 
 ## Configuration
@@ -184,7 +194,36 @@ String result = CharacterFrequency.count("hello world");
 // Output: h:1, e:1, l:3, o:2, ' ':1, w:1, r:1, d:1
 ```
 
-### Run the demo
+### Run the demo (Direct Java - Recommended)
+```bash
+java -cp target/test-classes com.multibank.utils.CharacterFrequency
+```
+
+**Output:**
+```
+=== Character Frequency Counter ===
+
+Input : "hello world"       
+Output: h:1, e:1, l:3, o:2,  :1, w:1, r:1, d:1
+
+Input : "aabbcc"            
+Output: a:2, b:2, c:2
+
+Input : "Hello World"       
+Output: H:1, e:1, l:3, o:2,  :1, W:1, r:1, d:1
+```
+
+### Run the standalone tests
+```bash
+java -cp target/test-classes com.multibank.tests.SimpleCharacterFrequencyTest
+```
+
+### Run unit tests with TestNG (Alternative)
+```bash
+mvn test -DsuiteXmlFile=testng-unit.xml
+```
+
+### Run the demo with Maven (Alternative)
 ```bash
 mvn compile -q && mvn exec:java \
   -Dexec.mainClass="com.multibank.utils.CharacterFrequency" \
